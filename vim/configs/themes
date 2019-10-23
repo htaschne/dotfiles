@@ -1,0 +1,10 @@
+
+" Classic:
+"set background=light
+""colorscheme peachpuff
+
+" PaperColor:
+set background=dark
+colorscheme PaperColor
+
+" vim: ft=vim

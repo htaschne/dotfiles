@@ -1,0 +1,35 @@
+" Let's make life beatiful, shall we?
+syntax on
+
+" I like nudes
+set nu
+
+" Default was too dark to read
+highlight Comment ctermfg=green
+
+" Indentation and Spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set ai
+set smartindent
+set autoindent
+
+" Cause searching is about making stuff shinny
+set hlsearch
+set ignorecase
+
+" Multiple files editting
+set hidden
+set noswapfile
+
+" Vi compatibility
+set nocompatible
+
+" Navigation can be ergonomic too
+set scrolloff=10
+
+" Just to be clear
+set encoding=utf-8
+
+" vim: ft=vim

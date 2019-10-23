@@ -1,0 +1,37 @@
+#!/usr/local/bin/python3
+
+from os import system
+from os.path import expanduser, exists
+
+def check(filename):
+    if exists(expanduser('~') + '/' + filename):
+        print('Moving %s to %s_backup' % (filename, filename))
+        system('mv ~/%s ~/%s_backup' % (filename, filename))
+
+def main():
+
+    files = ['.bash_profile','.gitignore', '.vimrc', '.tmux.conf', '.config/nvim/init.vim']
+
+    print('Checking...')
+    for file in files:
+        check(file)
+
+    print('Linking...')
+    system('ln -sf $HOME/dotfiles/bash/bash_profile.sh ~/.bash_profile')
+
+    # Vim
+    system('ln -sf $HOME/dotfiles/vim/vimrc ~/.vim/vimrc')
+
+    # tmux
+    system('ln -sf $HOME/dotfiles/.tmux.conf ~/.tmux.conf')
+
+    # Neovim
+    system('ln -sf $HOME/dotfiles/nvim/init.vim ~/.config/nvim/init.vim')
+
+    # Git
+    system('ln -sf $HOME/dotfiles/.gitconfig')
+
+    print('Done!')
+
+if __name__ == '__main__':
+    main()
