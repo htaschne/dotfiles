@@ -1,0 +1,12 @@
+#!/usr/local/bin/python3
+
+# Overrides Mac OS defaults configurations
+
+# Launchpad Icons
+os.system("defaults write com.apple.dock springboard-columns -int 9")
+os.system("defaults write com.apple.dock springboard-rows -int 8")
+os.system("killall Dock")
+## to revert:
+#os.system("defaults delete com.apple.dock springboard-rows")
+#os.system("defaults delete com.apple.dock springboard-columns")
+#os.system("killall Dock")
