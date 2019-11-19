@@ -4,16 +4,15 @@ syntax on
 " I like nudes
 set nu
 
-" Default was too dark to read
-highlight Comment ctermfg=green
+" For when comments are too dark
+"highlight Comment ctermfg=green
 
 " Indentation and Spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set ai
-set smartindent
 set autoindent
+set smartindent
 
 " Cause searching is about making stuff shinny
 set hlsearch
@@ -31,5 +30,8 @@ set scrolloff=10
 
 " Just to be clear
 set encoding=utf-8
+
+" column and row
+set ruler
 
 " vim: ft=vim

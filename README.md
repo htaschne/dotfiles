@@ -1,10 +1,11 @@
 # .files
 
 ### Contains my Mac OS configurations for:
-* tmux (2.8)
-* bash
 * vim
 * neovim
+* bash
+* tmux (2.8)
+* screen
 
 > If you want to install tmux 2.8 (without homebrew), please check tmux-install.md
 
