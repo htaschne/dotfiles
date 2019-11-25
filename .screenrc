@@ -6,7 +6,7 @@ startup_message off
 vbell off
   
 # I use control+a for beginning-of-line, this remaps it to the tick/tilda key
-escape ``
+#escape ``
 
 # Bind tick+e to show the tick character since tick+tick is too convenience to toggle windows
 escape `e

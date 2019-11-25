@@ -3,7 +3,8 @@
 ### Contains my Mac OS configurations for:
 * vim
 * neovim
-* bash
+* bash (DEPRECATED)
+* zsh
 * tmux (2.8)
 * screen
 
