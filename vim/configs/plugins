@@ -1,4 +1,0 @@
-call plug#begin('~/.vim/plugged')
-call plug#end()
-
-" vim: ft=vim

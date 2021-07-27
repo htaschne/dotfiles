@@ -1,5 +1,5 @@
 # Mac OS
-.DS_Store
+*.DS_Store
 
 # Vim
 [._]*.s[a-v][a-z]
@@ -11,7 +11,4 @@ Session.vim
 Sessionx.vim
 
 # Temporary
-.netrwhist
-
-# Vim Plugins
-vim/configs/plugs.vim
+*.netrwhist

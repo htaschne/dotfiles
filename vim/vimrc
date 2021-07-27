@@ -1,5 +1,16 @@
-source $HOME/dotfiles/vim/configs/themes
-source $HOME/dotfiles/vim/configs/plugins
-source $HOME/dotfiles/vim/configs/general
-source $HOME/dotfiles/vim/configs/mappings
-source $HOME/dotfiles/vim/skeletons/skeletons
+syntax on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+set number
+set hlsearch
+set ruler
+inoremap <C-c> <Esc>
+
+highlight Comment ctermfg=green
+
+call plug#begin('~/.vim/plugged')
+Plug 'tomlion/vim-solidity'
+Plug 'ziglang/zig.vim'
+call plug#end()
