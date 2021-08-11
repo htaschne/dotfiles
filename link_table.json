@@ -1,0 +1,10 @@
+{
+    "$HOME/.dotfiles/bashrc": "~/.bashrc",
+    "$HOME/.dotfile/vim": "~/.vim",
+    "$HOME/.dotfiles/nvim": "~/.config/nvim",
+    "$HOME/.dotfiles/tmux.conf": "~/.tmux.conf",
+    "$HOME/.bashrc": "~/.bash_profile",
+    "$HOME/.dotfiles/gitconfig": "~/.gitconfig",
+    "$HOME/.dotfiles/gitignore": "~/.gitignore",
+    "$HOME/.dotfiles/pycodestyle": "~/.config/pycodestyle"
+}

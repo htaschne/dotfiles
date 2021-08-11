@@ -1,0 +1,20 @@
+set t_Co=256
+set background=dark
+set listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:⌴
+" set cursorline
+
+let g:airline_theme='minimalist'
+" let g:airline_theme='monochrome'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+set termguicolors
+silent! colorscheme base16-tomorrow-night
+
+
+" colorscheme codedark
+" let g:airline_theme = 'codedark'
+
+" colorscheme ghdark
+
+" vim: ft=vim

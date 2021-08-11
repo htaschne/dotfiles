@@ -1,0 +1,53 @@
+let g:mapleader=" "
+let g:maplocalleader="\\"
+set pastetoggle=<F2>
+
+noremap               <Leader>ev                    :e $MYVIMRC<CR>
+
+noremap               ]q                            :cn<CR>
+noremap               [q                            :cp<CR>
+noremap               ]f                            :cnfile<CR>
+noremap               [f                            :cpfile<CR>
+" noremap               ]b                            :bn<CR>
+" noremap               [b                            :bp<CR>
+noremap               <Leader>]                     :bn<CR>
+noremap               <Leader>[                     :bp<CR>
+
+noremap               <Leader>c                     "+y
+noremap               <Leader>d                     :bd<CR>
+
+noremap               <Leader>o                     m`o<Esc>``
+noremap               <Leader>O                     m`O<Esc>``
+
+nnoremap              Q                             @q
+vnoremap              Q                             :norm @q<CR>
+
+noremap               <F4>                          :NERDTreeToggle<CR>
+
+
+noremap               <Leader>L                     :set list!<CR>
+noremap               <Leader>h                     :set hlsearch!<CR>
+noremap               <silent><C-n>                 :call search_pulse#Pulse()<CR>
+
+noremap               <Leader>W                     :%s/\v\s+$//<CR>
+noremap               <Leader>w                     :set wrap!<CR>
+noremap               <Leader>C                     :!ctags -R .<CR>
+noremap               <Leader>x                     :Explore<CR>
+
+noremap               <Leader>ao                    :CtrlSFToggle<CR>
+nmap                  <Leader>aa                    <Plug>CtrlSFPrompt
+
+" Complete using tab
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+" vim: ft=vim
