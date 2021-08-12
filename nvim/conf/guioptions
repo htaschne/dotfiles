@@ -1,7 +1,7 @@
 set t_Co=256
 set background=dark
 set listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:⌴
-" set cursorline
+set cursorline
 
 let g:airline_theme='minimalist'
 " let g:airline_theme='monochrome'
