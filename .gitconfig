@@ -1,5 +1,8 @@
 [user]
-	name = Pedro Schneider
-	email = pedroschneider@outlook.com
-[github]
-	user = pwschneider
+  name = Agatha Schneider
+  email = agatha.schneider@outlook.com
+[core]
+  editor = nvim
+  excludesFile = ~/.gitignore
+[init]
+  defaultBranch = main

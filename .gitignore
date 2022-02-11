@@ -31,3 +31,6 @@ metals.sbt
 *.vscode/
 *.hi
 *.o
+*idea
+*.idea
+*tmp*
