@@ -1,0 +1,15 @@
+llvm
+ripgrep
+lua
+spaceship
+speedtest-cli
+cmake
+starship
+neovim
+tmux
+node
+gcc
+vim
+git
+wget
+htop
