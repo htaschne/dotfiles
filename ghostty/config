@@ -1,0 +1,21 @@
+# TokyoNight colors over a true, opaque black background.
+# Other built-in options: Catppuccin Mocha, Dracula, Synthwave.
+theme = TokyoNight
+background = #000000
+background-opacity = 1
+window-theme = dark
+
+# Cyan block cursor makes the trail easy to see.
+cursor-color = #7dcfff
+cursor-text = #000000
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# Neovide-style cursor trail from sahaj-b/cursor-shaders.
+custom-shader = shaders/cursor-shaders/ghostty/cursor_warp.glsl
+# Finish animations even when focus changes.
+custom-shader-animation = always
+
+# Includes the icons used by the Neovim interface.
+font-family = JetBrainsMono Nerd Font

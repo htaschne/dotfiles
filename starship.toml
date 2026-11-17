@@ -1,0 +1,41 @@
+# Path and Git get the available horizontal space.
+format = "$directory$git_branch$git_status$character"
+right_format = ""
+add_newline = false
+command_timeout = 500
+
+[directory]
+format = "[$path]($style) "
+style = "bold #7dcfff"
+truncation_length = 0
+truncate_to_repo = false
+read_only = ""
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = " "
+style = "bold #bb9af7"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "#e0af68"
+conflicted = "= $count "
+ahead = "↑$count "
+behind = "↓$count "
+diverged = "↑$ahead_count ↓$behind_count "
+untracked = "?$count "
+stashed = "*$count "
+modified = "!$count "
+staged = "+$count "
+renamed = "»$count "
+deleted = "-$count "
+
+[character]
+success_symbol = "[❯](bold #9ece6a)"
+error_symbol = "[❯](bold #f7768e)"
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
